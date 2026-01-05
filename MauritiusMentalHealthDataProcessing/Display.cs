@@ -20,8 +20,8 @@ namespace MauritiusMentalHealthDataProcessing
                  targetParticipants = (int?)f.Element("TargetParticipants") ?? 0,
                  peopleServed = (int?)f.Element("PeopleServed") ?? 0,
                  allocatedBudget =(int?) f.Element("AllocatedBudget") ?? 0,
-                 satisfactionScore = (int?)f.Element("SatisfactionScore") ?? 0,
-                 minimumRequiredScore = (int?)f.Element("MinimumRequiredScore") ?? 0,
+                 satisfactionScore = (decimal?)f.Element("SatisfactionScore") ?? 0,
+                 minimumRequiredScore = (decimal?)f.Element("MinimumRequiredScore") ?? 0,
                  status = f.Element("Status")?.Value ?? "N/A",
                  lastUpdated = f.Element("LastUpdated")?.Value ?? "N/A",
              });
@@ -29,7 +29,7 @@ namespace MauritiusMentalHealthDataProcessing
             
             foreach (var p in programs)
             {
-                while ((p.peopleServed < p.targetParticipants) && (p.satisfactionScore < p.minimumRequiredScore))
+                if ((p.peopleServed < p.targetParticipants) && (p.satisfactionScore < p.minimumRequiredScore))
                 {
                     Console.WriteLine(new string('=', 50));
 
