@@ -13,6 +13,8 @@ namespace MauritiusMentalHealthDataProcessing
             return doc;
         }
 
+        //Validation logic
+
         public bool ValidateXml(XDocument doc)
         {
 
@@ -28,15 +30,18 @@ namespace MauritiusMentalHealthDataProcessing
                 errorMessage += e.Message + "\n";
             });
 
-            if (!isValid)
-            {
-                Console.WriteLine("XML Validation Errors:\n" + errorMessage);
-            }
-            else
-            {
-                Console.WriteLine("XML is valid against the schema.");
 
-            }
+            //debugging
+
+            //if (!isValid)
+            //{
+            //    Console.WriteLine("XML Validation Errors:\n" + errorMessage);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("XML is valid against the schema.");
+
+            //}
             
             return isValid;
 

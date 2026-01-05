@@ -7,9 +7,20 @@ namespace MauritiusMentalHealthDataProcessing
 
         static void Main(string[] args)
         {
-            Reading reading = new Reading();
-            XDocument doc = reading.ReadXmlFile();
-            bool isValid = reading.ValidateXml(doc);
+
+            Reading reader = new Reading();
+            XDocument doc = reader.ReadXmlFile();
+            bool isValid = reader.ValidateXml(doc);
+            if (isValid)
+            {
+                Display display = new Display();
+                display.ShowPrograms(doc);
+            }
+            else
+            {
+                Console.WriteLine("Exiting due to XML validation errors.");
+            }
+
         }
 
 
