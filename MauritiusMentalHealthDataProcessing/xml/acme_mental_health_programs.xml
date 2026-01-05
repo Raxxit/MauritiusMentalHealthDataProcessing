@@ -1,0 +1,57 @@
+<MentalHealthPrograms>
+    <Programs>
+
+        <Program>
+            <ProgramID>MH001</ProgramID>
+            <ProgramName>Adolescent Stress Support Initiative</ProgramName>
+            <ProgramYear>2024</ProgramYear>
+            <TargetParticipants>1500</TargetParticipants>
+            <PeopleServed>980</PeopleServed>
+            <AllocatedBudget>25000000</AllocatedBudget>
+            <SatisfactionScore>3.8</SatisfactionScore>
+            <MinimumRequiredScore>4.0</MinimumRequiredScore>
+            <Status>Underperforming</Status>
+            <LastUpdated>2024-04-15</LastUpdated>
+        </Program>
+
+        <Program>
+            <ProgramID>MH002</ProgramID>
+            <ProgramName>Workplace Mental Wellness Programme</ProgramName>
+            <ProgramYear>2024</ProgramYear>
+            <TargetParticipants>3000</TargetParticipants>
+            <PeopleServed>3050</PeopleServed>
+            <AllocatedBudget>40000000</AllocatedBudget>
+            <SatisfactionScore>4.3</SatisfactionScore>
+            <MinimumRequiredScore>4.0</MinimumRequiredScore>
+            <Status>Meeting Expectations</Status>
+            <LastUpdated>2024-04-12</LastUpdated>
+        </Program>
+
+        <Program>
+            <ProgramID>MH003</ProgramID>
+            <ProgramName>Community Counselling Outreach</ProgramName>
+            <ProgramYear>2024</ProgramYear>
+            <TargetParticipants>2000</TargetParticipants>
+            <PeopleServed>1450</PeopleServed>
+            <AllocatedBudget>18000000</AllocatedBudget>
+            <SatisfactionScore>3.5</SatisfactionScore>
+            <MinimumRequiredScore>3.8</MinimumRequiredScore>
+            <Status>Underperforming</Status>
+            <LastUpdated>2024-04-18</LastUpdated>
+        </Program>
+
+        <Program>
+            <ProgramID>MH004</ProgramID>
+            <ProgramName>Young Couples and Family Support Helpline</ProgramName>
+            <ProgramYear>2024</ProgramYear>
+            <TargetParticipants>50000</TargetParticipants>
+            <PeopleServed>52000</PeopleServed>
+            <AllocatedBudget>12000000</AllocatedBudget>
+            <SatisfactionScore>4.6</SatisfactionScore>
+            <MinimumRequiredScore>4.2</MinimumRequiredScore>
+            <Status>Exceeding Expectations</Status>
+            <LastUpdated>2024-04-20</LastUpdated>
+        </Program>
+
+    </Programs>
+</MentalHealthPrograms>

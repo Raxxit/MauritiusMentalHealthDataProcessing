@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="acmeSchema"
+    targetNamespace="http://tempuri.org/acmeSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/acmeSchema.xsd"
+    xmlns:mstns="http://tempuri.org/acmeSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:element name="MentalHealthPrograms">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Programs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Program" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ProgramID" type="xs:string" />
+										<xs:element name="ProgramName" type="xs:string" />
+										<xs:element name="ProgramYear" type="xs:int" />
+										<xs:element name="TargetParticipants" type="xs:int" />
+										<xs:element name="PeopleServed" type="xs:int" />
+										<xs:element name="AllocatedBudget" type="xs:int" />
+										<xs:element name="SatisfactionScore" type="xs:decimal" />
+										<xs:element name="MinimumRequiredScore" type="xs:decimal" />
+										<xs:element name="Status" type="xs:string" />
+										<xs:element name="LastUpdated" type="xs:date" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+</xs:schema>
